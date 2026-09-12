@@ -31,12 +31,6 @@ class AlienInvasion:
             self.ship.update()
             self._update_bullets()
             self._update_screen()
-              
-            self.screen.fill(self.settings.bg_color)
-            self.ship.blitme()
-
-        
-            pygame.display.flip()
             self.clock.tick(60)  # Limit the frame rate to 60 FPS
 
     def _check_events(self):
@@ -90,7 +84,6 @@ class AlienInvasion:
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
 
-        self.ship.blitme()
         pygame.display.flip()
 
 if __name__ == '__main__':

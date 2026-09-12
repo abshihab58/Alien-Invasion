@@ -8,7 +8,7 @@ class Settings:
         self.bg_color = (230, 230, 230)
 
         # Ship settings
-        self.ship_speed = 1.5
+        self.ship_speed = 4
         self.ship_limit = 3
 
         # Bullet settings
@@ -16,7 +16,7 @@ class Settings:
         self.bullet_width = 3
         self.bullet_height = 15
         self.bullet_color = (60, 60, 60)
-        self.bullets_allowed = 3
+        self.bullets_allowed = 100
 
     #     # Alien settings
     #     self.alien_speed = 1.0
