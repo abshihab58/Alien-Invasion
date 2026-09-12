@@ -5,6 +5,12 @@ import pygame
 from settings import Settings
 from ship import Ship
 from bullet import Bullet
+from alien import Alien
+
+
+
+
+
 
 class AlienInvasion:
     
