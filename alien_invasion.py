@@ -33,6 +33,7 @@ class AlienInvasion:
             self.ship.update()
             self._update_bullets()
             self._update_screen()
+            self._update_aliens()
             self.clock.tick(60)  # Limit the frame rate to 60 FPS
 
     def _check_events(self):
@@ -109,6 +110,10 @@ class AlienInvasion:
         new_alien.rect.x = x_position
         new_alien.rect.y = y_position
         self.aliens.add(new_alien)
+
+    def _update_aliens(self):
+        self.aliens.update()
+
 
 if __name__ == '__main__':
     
