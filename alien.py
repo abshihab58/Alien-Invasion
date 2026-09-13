@@ -22,3 +22,8 @@ class Alien(Sprite):
         """Move the alien right or left."""
         self.x += (self.settings.alien_speed * self.settings.fleet_direction)
         self.rect.x = self.x
+
+    def check_edges(self):
+
+        screen_rect = self.screen.get_rect()
+        return (self.rect.right >= screen_rect.right) or (self.rect.left <= 0)
