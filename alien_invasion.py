@@ -8,7 +8,7 @@ from bullet import Bullet
 from alien import Alien
 
 class AlienInvasion:
-    
+ 
     def __init__(self):
         
         pygame.init()
@@ -92,6 +92,15 @@ class AlienInvasion:
     def _create_fleet(self):
         alien = Alien(self)
         self.aliens.add(alien)
+        alien_width=alien.rect.width
+
+        current_x = alien_width
+        while current_x < (self.settings.screen_width - 2 * alien_width):
+            new_alien = Alien(self)
+            new_alien.x = current_x
+            new_alien.rect.x = new_alien.x
+            self.aliens.add(new_alien)
+            current_x += alien_width * 2  # Move to the next position for the next alien
 
 
 if __name__ == '__main__':
