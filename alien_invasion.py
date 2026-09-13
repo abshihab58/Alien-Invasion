@@ -18,7 +18,7 @@ class AlienInvasion:
         self.clock = pygame.time.Clock()
         self.settings = Settings()
 
-        self.screen = pygame.display.set_mode((0,0) , pygame.FULLSCREEN)
+        self.screen = pygame.display.set_mode((0,0), pygame.FULLSCREEN)
         self.settings.screen_width = self.screen.get_rect().width
         self.settings.screen_height = self.screen.get_rect().height 
         pygame.display.set_caption("Alien Invasion")
@@ -30,14 +30,17 @@ class AlienInvasion:
         self.aliens = pygame.sprite.Group() # Create a group to hold aliens
 
         self._create_fleet()  # Create the fleet of aliens
+        self.game_active = True  # Start the game in an active state
     def run_game(self):
         
         while True:
             self._check_events()
-            self.ship.update()
-            self._update_bullets()
+            if self.game_active:
+                self.ship.update()
+                self._update_bullets()
+                self._update_aliens()
+
             self._update_screen()
-            self._update_aliens()
             self.clock.tick(60)  # Limit the frame rate to 60 FPS
 
     def _check_events(self):
@@ -147,15 +150,20 @@ class AlienInvasion:
         self.settings.fleet_direction *= -1
 
     def _ship_hit(self):
-        self.stats.ships_left -= 1
+        if self.stats.ships_left > 0:
 
-        self.bullets.empty()
-        self.aliens.empty()
+            self.stats.ships_left -= 1
 
-        self._create_fleet()
-        self.ship.center_ship()
+            self.bullets.empty()
+            self.aliens.empty()
 
-        sleep(0.5)
+            self._create_fleet()
+            self.ship.center_ship()
+
+            sleep(0.5)
+        else:
+            self.game_active = False
+            
 
     def _check_aliens_bottom(self):
         for alien in self.aliens.sprites():
