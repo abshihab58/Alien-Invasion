@@ -31,6 +31,7 @@ class AlienInvasion:
 
         self._create_fleet()  # Create the fleet of aliens
         self.game_active = True  # Start the game in an active state
+        self.game_active = False
     def run_game(self):
         
         while True:
