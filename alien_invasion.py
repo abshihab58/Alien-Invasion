@@ -9,6 +9,7 @@ from ship import Ship
 from bullet import Bullet
 from alien import Alien
 from button import Button
+from scoreboard import Scoreboard
 
 class AlienInvasion:
  
@@ -25,7 +26,7 @@ class AlienInvasion:
         pygame.display.set_caption("Alien Invasion")
 
         self.stats = GameStats(self)
-
+        self.sb = Scoreboard(self)
         self.ship = Ship(self)
         self.bullets = pygame.sprite.Group() # Create a group to hold bullets
         self.aliens = pygame.sprite.Group() # Create a group to hold aliens
@@ -74,6 +75,7 @@ class AlienInvasion:
             self.aliens.empty()
             self._create_fleet()
             self.ship.center_ship()
+            self.settings.initialize_dynamic_settings()  # Reset the game speed settings
 
     def _check_keydown_events(self, event):
         if event.key == pygame.K_RIGHT:
@@ -121,6 +123,7 @@ class AlienInvasion:
         self.screen.fill(self.settings.bg_color)
         self.ship.blitme()
         self.aliens.draw(self.screen)  # Draw the aliens on the screen
+        self.sb.show_score()
 
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
