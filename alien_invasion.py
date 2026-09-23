@@ -75,10 +75,11 @@ class AlienInvasion:
             self.game_active = True
             self.bullets.empty()
             self.aliens.empty()
-            self._create_fleet()
+            self._create_fleet() 
             self.ship.center_ship()
             self.settings.initialize_dynamic_settings()  # Reset the game speed settings
             self.sb.prep_score()  # Reset the score display
+            self.sb.prep_level()  # Reset the level displays
 
     def _check_keydown_events(self, event):
         if event.key == pygame.K_RIGHT:
@@ -121,12 +122,15 @@ class AlienInvasion:
             for aliens in collisions.values():
                 self.stats.score += self.settings.alien_points * len(aliens)
                 self.sb.prep_score()
-                self.sb.check_high_score()  # Check if the current score is a new high score
+                self.sb.check_high_score()  # Check if the current score is a new high score   
 
         if not self.aliens:
             self.bullets.empty()
             self._create_fleet()
             self.settings.increase_speed()  # Increase game speed when a fleet is destroyed
+
+            self.stats.level += 1
+            self.sb.prep_level()  # Update the level display
 
     def _update_screen(self):
         
