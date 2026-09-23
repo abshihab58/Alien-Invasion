@@ -66,7 +66,9 @@ class AlienInvasion:
                 self._check_play_button(mouse_pos)
 
     def _check_play_button(self, mouse_pos):
+
         button_clicked = self.play_button.rect.collidepoint(mouse_pos)
+
         if button_clicked and not self.game_active:
             pygame.mouse.set_visible(False)  # Hide the mouse cursor
             self.stats.reset_stats()
@@ -76,6 +78,7 @@ class AlienInvasion:
             self._create_fleet()
             self.ship.center_ship()
             self.settings.initialize_dynamic_settings()  # Reset the game speed settings
+            self.sb.prep_score()  # Reset the score display
 
     def _check_keydown_events(self, event):
         if event.key == pygame.K_RIGHT:
@@ -113,6 +116,11 @@ class AlienInvasion:
             self._create_fleet()
     def _check_bullet_alien_collisions(self):
         collisions = pygame.sprite.groupcollide(self.bullets, self.aliens, True, True)
+
+        if collisions:
+            self.stats.score += self.settings.alien_points
+            self.sb.prep_score()
+
         if not self.aliens:
             self.bullets.empty()
             self._create_fleet()
