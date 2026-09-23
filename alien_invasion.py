@@ -80,6 +80,7 @@ class AlienInvasion:
             self.settings.initialize_dynamic_settings()  # Reset the game speed settings
             self.sb.prep_score()  # Reset the score display
             self.sb.prep_level()  # Reset the level displays
+            self.sb.prep_ships()
 
     def _check_keydown_events(self, event):
         if event.key == pygame.K_RIGHT:
@@ -192,6 +193,7 @@ class AlienInvasion:
         if self.stats.ships_left > 0:
 
             self.stats.ships_left -= 1
+            self.sb.prep_ships()  # Update the display of remaining ships
 
             self.bullets.empty()
             self.aliens.empty()
