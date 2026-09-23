@@ -114,6 +114,7 @@ class AlienInvasion:
         if not self.aliens:
             self.bullets.empty()
             self._create_fleet()
+            self.settings.increase_speed()  # Increase game speed when a fleet is destroyed
 
     def _update_screen(self):
         
