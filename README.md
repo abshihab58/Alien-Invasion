@@ -20,6 +20,7 @@ Control the spaceship → Shoot bullets → Destroy aliens → Achieve a high sc
 Main Features :
 🚀 Player-controlled spaceship
 ⬅️➡️ Move the spaceship left and right
+
 🔫 Shoot bullets
 👾 Multiple alien enemies
 💥 Bullet and alien collision detection
