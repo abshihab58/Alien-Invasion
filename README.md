@@ -73,77 +73,92 @@ Through this project, I practiced several important Python concepts:
 
 ```bash
 git clone https://github.com/abshihab58/Alien-Invasion.git
-2️⃣ Open the Project Folder
+```
+
+### 2️⃣ Open the Project Folder
+
+```bash
 cd Alien-Invasion
-3️⃣ Install Pygame
+```
+
+### 3️⃣ Install Pygame
+
+```bash
 pip install pygame
-4️⃣ Run the Game
+```
+
+### 4️⃣ Run the Game
+
+```bash
 python alien_invasion.py
-🎮 Controls
-Key	Action
-⬅️ Left Arrow	Move spaceship left
-➡️ Right Arrow	Move spaceship right
-␣ Space	Fire bullet
-Q	Quit the game
-🎯 Learning Goals
+```
+
+---
+
+## 🎮 Controls
+
+| Key | Action |
+|---|---|
+| ⬅️ Left Arrow | Move spaceship left |
+| ➡️ Right Arrow | Move spaceship right |
+| ␣ Space | Fire bullet |
+| **Q** | Quit the game |
+
+---
+
+## 🎯 Learning Goals
 
 The main goals of this project were to:
 
-Strengthen my Python fundamentals
-Understand Object-Oriented Programming
-Learn how Pygame works
-Practice creating a complete Python application
-Understand how multiple Python modules work together
-Improve problem-solving and debugging skills
-Gain practical experience by building a project instead of only studying theory
-🔮 Future Improvements
+- Strengthen my Python fundamentals
+- Understand Object-Oriented Programming
+- Learn how Pygame works
+- Practice creating a complete Python application
+- Understand how multiple Python modules work together
+- Improve problem-solving and debugging skills
+- Gain practical experience by building a project instead of only studying theory
+
+---
+
+## 🔮 Future Improvements
 
 Possible improvements for future versions include:
 
-🔊 Sound effects
-🎵 Background music
-🏆 High-score system
-👾 Different types of aliens
-🌌 Better backgrounds and graphics
-⚡ Power-ups
-❤️ Health system
-🎚️ Multiple difficulty levels
-🗺️ Multiple game levels
-🎨 Improved user interface
-📸 Gameplay Screenshot
+- 🔊 Sound effects
+- 🎵 Background music
+- 🏆 High-score system
+- 👾 Different types of aliens
+- 🌌 Better backgrounds and graphics
+- ⚡ Power-ups
+- ❤️ Health system
+- 🎚️ Multiple difficulty levels
+- 🗺️ Multiple game levels
+- 🎨 Improved user interface
 
-📖 Learning Resource
+---
+
+## 📸 Gameplay Screenshot
+
+![Alien Invasion Gameplay](./images/gameplay.png)
+
+*Alien Invasion — In-game gameplay*
+
+---
+
+## 📖 Learning Resource
 
 This project was developed while following:
 
-Python Crash Course
+**Python Crash Course**
 
-Author: Eric Matthes
+**Author:** Eric Matthes
 
 The project was used as a practical way to apply Python concepts learned throughout the book.
 
-🚀 My Learning Journey
+---
 
-This project is one of the first major projects in my Python learning journey.
+## 👨‍💻 Author
 
-My current learning path is focused on building a strong foundation in:
-
-Python
-   ↓
-NumPy & Pandas
-   ↓
-Data Analysis
-   ↓
-Machine Learning
-   ↓
-Deep Learning
-   ↓
-AI/ML Projects
-
-I am building projects step-by-step to develop practical programming and problem-solving skills.
-
-👨‍💻 Author
-
-Abu Bakar Shihab
+**Abu Bakar Shihab**
 
 Computer Science Student | Python Learner | Aspiring AI/ML Engineer
