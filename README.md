@@ -102,6 +102,12 @@ Possible improvements for future versions include:
 🎨 Improved user interface
 📖 Learning Resource
 
+## 📸 Gameplay Screenshot
+
+<p align="center">
+  <img src="images/gameplay.png" width="700">
+</p>
+
 This project was developed while following:
 
 Python Crash Course
