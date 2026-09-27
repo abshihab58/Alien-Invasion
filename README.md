@@ -2,12 +2,11 @@
 
 A 2D arcade-style space shooting game built with Python and Pygame, inspired by the project from Eric Matthes' Python Crash Course.
 
-
 📌 Overview
 
 Alien Invasion is a 2D arcade-style shooting game developed using Python and the Pygame library.
 
-In this game, the player controls a spaceship and tries to destroy waves of incoming aliens. The project helped me practice Python programming concepts and understand how different components of a larger Python application work together.
+In this game, the player controls a spaceship and tries to destroy waves of incoming aliens. This project helped me practice Python programming concepts and understand how different components of a larger Python application work together.
 
 This project is part of my learning journey through Python Crash Course by Eric Matthes.
 
@@ -17,10 +16,9 @@ The main objective is simple:
 
 Control the spaceship → Shoot bullets → Destroy aliens → Achieve a high score
 
-Main Features :
+Main Features
 🚀 Player-controlled spaceship
 ⬅️➡️ Move the spaceship left and right
-
 🔫 Shoot bullets
 👾 Multiple alien enemies
 💥 Bullet and alien collision detection
@@ -53,8 +51,7 @@ Collision detection
 Game states
 File organization
 Working with external Python libraries
-
-⚙️ Installation & Setup :
+⚙️ Installation & Setup
 1️⃣ Clone the Repository
 git clone https://github.com/abshihab58/Alien-Invasion.git
 2️⃣ Open the Project Folder
@@ -124,6 +121,7 @@ AI/ML Projects
 I am building projects step-by-step to develop practical programming and problem-solving skills.
 
 👨‍💻 Author
+
 Abu Bakar Shihab
 
 Computer Science Student | Python Learner | Aspiring AI/ML Engineer
