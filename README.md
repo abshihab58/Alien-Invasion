@@ -2,6 +2,8 @@
 
 A 2D arcade-style space shooting game built with **Python** and **Pygame**, inspired by the project from Eric Matthes' *Python Crash Course*.
 
+---
+
 ## 📌 Overview
 
 **Alien Invasion** is a 2D arcade-style shooting game developed using **Python** and the **Pygame** library.
@@ -9,6 +11,8 @@ A 2D arcade-style space shooting game built with **Python** and **Pygame**, insp
 In this game, the player controls a spaceship and tries to destroy waves of incoming aliens. This project helped me practice Python programming concepts and understand how different components of a larger Python application work together.
 
 This project is part of my learning journey through **Python Crash Course by Eric Matthes**.
+
+---
 
 ## 🎮 Gameplay
 
@@ -29,14 +33,18 @@ The main objective is simple:
 - 📈 Increasing game difficulty
 - 🖥️ Real-time game screen rendering
 
+---
+
 ## 🛠️ Technologies Used
 
 | Technology | Purpose |
 |---|---|
-| 🐍 Python | Main programming language |
-| 🎮 Pygame | Game development and graphics |
-| 💻 VS Code | Development environment |
-| 🌐 Git & GitHub | Version control and project hosting |
+| 🐍 **Python** | Main programming language |
+| 🎮 **Pygame** | Game development and graphics |
+| 💻 **VS Code** | Development environment |
+| 🌐 **Git & GitHub** | Version control and project hosting |
+
+---
 
 ## 📚 Concepts Practiced
 
@@ -56,6 +64,8 @@ Through this project, I practiced several important Python concepts:
 - Game states
 - File organization
 - Working with external Python libraries
+
+---
 
 ## ⚙️ Installation & Setup
 
@@ -100,21 +110,37 @@ Possible improvements for future versions include:
 🎚️ Multiple difficulty levels
 🗺️ Multiple game levels
 🎨 Improved user interface
+📸 Gameplay Screenshot
+
 📖 Learning Resource
-
-## 📸 Gameplay Screenshot
-
-<p align="center">
-  <img src="images/gameplay.png" width="700">
-</p>
 
 This project was developed while following:
 
 Python Crash Course
+
 Author: Eric Matthes
 
 The project was used as a practical way to apply Python concepts learned throughout the book.
 
+🚀 My Learning Journey
+
+This project is one of the first major projects in my Python learning journey.
+
+My current learning path is focused on building a strong foundation in:
+
+Python
+   ↓
+NumPy & Pandas
+   ↓
+Data Analysis
+   ↓
+Machine Learning
+   ↓
+Deep Learning
+   ↓
+AI/ML Projects
+
+I am building projects step-by-step to develop practical programming and problem-solving skills.
 
 👨‍💻 Author
 
